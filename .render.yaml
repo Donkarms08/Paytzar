@@ -1,8 +1,7 @@
 services:
   - type: web
     name: coinproxy
-    env: php
-    buildCommand: ""
-    startCommand: ""
+    env: docker
     plan: free
     rootDir: .
+    autoDeploy: true
