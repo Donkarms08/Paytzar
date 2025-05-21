@@ -1,4 +1,11 @@
 <?php
+// DEBUG: log everything
+error_log("=== SERVER VARS ===\n" . print_r($_SERVER, true));
+if (function_exists('getallheaders')) {
+    error_log("=== ALL HEADERS ===\n" . print_r(getallheaders(), true));
+} else {
+    error_log("=== APACHE REQUEST HEADERS ===\n" . print_r(apache_request_headers(), true));
+}
 $apiUrl = 'https://www.coinpayments.net/api.php';
 
 // Get POST data
