@@ -1,2 +1,0 @@
-<?php
-// Blank index file
